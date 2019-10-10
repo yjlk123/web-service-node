@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 本文件作为一个模板文件，其实本来应该是.tpl 格式的文件，但是没办法建这种格式的文件，所以就用html了，没想到是可以的-->
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <style>
+        body {
+            margin: 30px
+        }
+        a {
+            display: block;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+{{#each files}}
+<a href="{{../dir}}/{{this}}">{{this}}</a>
+{{/each}}
+</body>
+</html>
